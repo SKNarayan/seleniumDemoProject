@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assignment test in multiple browser" parallel="none">
+    <test name="Chrome_Browser">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.AssignmentTest"/>
+        </classes>
+    </test>
+    <test name="Firefox_Browser">
+    <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.AssignmentTest"></class>
+        </classes>
+    </test><!-- Test -->
+</suite> <!-- Suite -->
